@@ -1,5 +1,5 @@
 ---
-description: Manage time-off / leave — list pending and approved leave, create leave requests, and approve/reject/cancel them, with coverage impact in mind. Use when the user asks about leave, time off, PTO, holidays, who's off, approving or rejecting leave requests, or deciding which requests are safe to approve.
+description: Use when the user asks about leave, time off, PTO, holidays, who's off, or wants to create, approve, reject, or cancel leave requests — including deciding which pending requests are safe to approve given coverage. Lists, creates, and responds to leave requests.
 ---
 
 # Leave management

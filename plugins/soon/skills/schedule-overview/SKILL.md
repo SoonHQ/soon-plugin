@@ -1,5 +1,5 @@
 ---
-description: Read and summarize the schedule — who is working, coverage gaps, hours scheduled vs available, and team capacity. Use when the user asks what the schedule looks like, who is on, how many people or hours are scheduled, where the gaps are, or for any read-only schedule question. Also the grounding step before making changes.
+description: Use when the user asks what the schedule looks like, who is working, how many people or hours are scheduled, where the coverage gaps are, or any read-only schedule/capacity question — and as the grounding step before making changes. Reads and summarizes the schedule, coverage, and team capacity.
 ---
 
 # Schedule overview
