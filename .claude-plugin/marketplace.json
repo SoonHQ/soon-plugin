@@ -9,7 +9,7 @@
     {
       "name": "soon",
       "source": "./plugins/soon",
-      "description": "Manage your Soon work schedule from Claude — read rosters, find coverage, create and publish shifts, and resolve change requests, with your real Soon permissions enforced.",
+      "description": "Manage your Soon work schedule from Claude. Read rosters, find coverage, create and publish shifts, and resolve change requests, with your real Soon permissions enforced.",
       "category": "productivity",
       "tags": ["scheduling", "workforce", "shifts", "rostering"]
     }

@@ -1,8 +1,8 @@
 {
   "name": "soon",
   "displayName": "Soon",
-  "version": "0.1.0",
-  "description": "Manage your Soon work schedule from Claude — read rosters, find coverage, create and publish shifts, and resolve change requests. Connects to Soon over OAuth and enforces your real team and board permissions.",
+  "version": "1.0.0",
+  "description": "Manage your Soon work schedule from Claude. Read rosters, find coverage, create and publish shifts, and resolve change requests. Connects to Soon over OAuth and enforces your real team and board permissions.",
   "author": {
     "name": "Soon",
     "email": "developers@soonapp.io",
