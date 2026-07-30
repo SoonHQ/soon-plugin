@@ -37,15 +37,17 @@ claude plugin validate .
 claude --plugin-dir ./plugins/soon
 ```
 
-For local testing against a dev server, point `plugins/soon/.mcp.json` at
-`http://localhost:4040/mcp` with an `Authorization: Bearer <dev token>` header
-(see the backend's `LOCAL_TESTING.md`). The published manifest uses the public
-`https` URL and OAuth at runtime.
+The published manifest uses the public `https` URL and OAuth at runtime.
 
 ## Releasing
 
 Bump `version` in `plugins/soon/.claude-plugin/plugin.json` per release. The
 community marketplace pins to a commit SHA; pushing new commits bumps the pin.
+
+## Learn more
+
+- Setup guide: https://soon.works/integrations/ai-connector
+- Privacy notice: https://soon.works/legal/mcp-privacy
 
 ## Support
 
