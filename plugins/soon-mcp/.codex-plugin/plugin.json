@@ -1,0 +1,41 @@
+{
+  "name": "soon-mcp",
+  "version": "1.0.0",
+  "description": "Soon scheduling plugin backed by Soon's OAuth and MCP endpoints.",
+  "author": {
+    "name": "Soon",
+    "url": "https://soon.works"
+  },
+  "homepage": "https://soon.works",
+  "repository": "https://github.com/SoonHQ/soon-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "soon",
+    "mcp",
+    "scheduling",
+    "oauth"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Soon",
+    "shortDescription": "Use Soon schedule data and actions from Codex.",
+    "longDescription": "Connect Codex to Soon over OAuth and MCP so it can inspect schedules, assignments, leave, intraday planning, and staffing data using the user's existing Soon permissions.",
+    "developerName": "Soon",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://soon.works",
+    "privacyPolicyURL": "https://soon.works/legal/privacy",
+    "termsOfServiceURL": "https://soon.works/legal/terms",
+    "defaultPrompt": [
+      "Show me today's published shifts and open assignments",
+      "Create a draft shift for next Monday morning",
+      "Summarize scheduling gaps across my boards"
+    ],
+    "screenshots": [],
+    "brandColor": "#0E7490"
+  }
+}

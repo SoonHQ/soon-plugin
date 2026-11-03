@@ -7,7 +7,7 @@ change requests, all with your real Soon team and board permissions enforced.
 ## Install
 
 ```
-/plugin marketplace add SoonHQ/soon-claude-plugin
+/plugin marketplace add SoonHQ/soon-plugin
 /plugin install soon@soon
 ```
 
