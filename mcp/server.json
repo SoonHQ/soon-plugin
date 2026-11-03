@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.soonhq/soon",
+  "description": "Connect Soon to ChatGPT, Codex, Claude, Cursor, and other MCP clients to read rosters, find coverage, create and publish shifts, manage leave, and optimize intraday activities. OAuth-protected and limited to the user's real Soon team and board permissions.",
+  "version": "1.0.0",
+  "websiteUrl": "https://soon.works",
+  "repository": {
+    "url": "https://github.com/SoonHQ/soon-plugin",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.soon.works/mcp"
+    }
+  ]
+}

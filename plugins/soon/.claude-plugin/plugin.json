@@ -9,7 +9,7 @@
     "url": "https://soon.works"
   },
   "homepage": "https://soon.works",
-  "repository": "https://github.com/SoonHQ/soon-claude-plugin",
+  "repository": "https://github.com/SoonHQ/soon-plugin",
   "license": "UNLICENSED",
   "keywords": ["scheduling", "workforce", "shifts", "rostering", "soon"]
 }

@@ -1,48 +1,65 @@
-# Soon — Claude plugin marketplace
+# Soon plugins for AI assistants
 
-This repository is the [Claude Code](https://code.claude.com/docs/en/plugins)
-plugin marketplace for [Soon](https://soon.works). It distributes the **`soon`**
-plugin, which connects Claude to Soon's scheduling platform over a remote,
-OAuth-protected MCP server.
+This repository packages [Soon](https://soon.works) for AI assistants. Every
+plugin connects to the same remote, OAuth-protected MCP server at
+`https://mcp.soon.works/mcp`. Your Soon team and board permissions are
+enforced on every action.
+
+| Assistant | Plugin | Manifest |
+| --- | --- | --- |
+| Claude Code | `plugins/soon` | `.claude-plugin/marketplace.json` |
+| OpenAI Codex | `plugins/soon-mcp` | `.agents/plugins/marketplace.json` |
+| Any MCP client | n/a | `mcp/server.json` (registry metadata) |
+
+Grok and other assistants can be added the same way, as another plugin folder
+with its own manifest. The MCP server is shared, so nothing else changes.
 
 ## Install
 
+### Claude Code
+
 ```
-/plugin marketplace add SoonHQ/soon-claude-plugin
+/plugin marketplace add SoonHQ/soon-plugin
 /plugin install soon@soon
 ```
 
-On first use, Claude opens your browser to sign in to Soon and authorize access.
-Your in-app team and board permissions are enforced on every action.
+### Codex
+
+```bash
+codex plugin marketplace add SoonHQ/soon-plugin
+codex plugin add soon-mcp@soon
+```
+
+On first use the assistant opens your browser so you can sign in to Soon and
+authorize access. Admins can make changes. Members get read access and
+self-service actions.
 
 ## What's here
 
 ```
-.claude-plugin/marketplace.json     # the marketplace catalog
-plugins/soon/                        # the Soon plugin
-├── .claude-plugin/plugin.json       # plugin manifest
-├── .mcp.json                        # remote MCP server (https://mcp.soon.works/mcp)
-├── skills/                          # model-invoked scheduling workflows
-└── README.md                        # plugin usage + security
+.claude-plugin/marketplace.json     # Claude Code marketplace catalog
+.agents/plugins/marketplace.json    # Codex marketplace catalog
+mcp/server.json                      # public MCP registry metadata
+plugins/soon/                        # Claude Code plugin (skills + MCP config)
+plugins/soon-mcp/                    # Codex plugin (skill + MCP config)
+scripts/                             # validation and endpoint checks
+END_USER_TESTING.md                  # fresh-session test checklist for Codex
 ```
 
-The MCP **server** itself (the tools, OAuth, and data access) lives in Soon's
-backend, not here — this repo only packages the connector + skills for Claude.
+The MCP server itself (tools, OAuth, data access) lives in Soon's private
+backend. This repository only packages the connector and skills.
 
-## Develop / test locally
+## Develop and test locally
 
-```
+```bash
 claude plugin validate ./plugins/soon
 claude plugin validate .
-claude --plugin-dir ./plugins/soon
+./scripts/validate-codex.sh
+./scripts/check-public-mcp.sh
 ```
 
-The published manifest uses the public `https` URL and OAuth at runtime.
-
-## Releasing
-
-Bump `version` in `plugins/soon/.claude-plugin/plugin.json` per release. The
-community marketplace pins to a commit SHA; pushing new commits bumps the pin.
+Published manifests use the public HTTPS URL and OAuth at runtime. Do not
+commit a local or dev URL.
 
 ## Learn more
 
