@@ -1,4 +1,5 @@
 ---
+name: intraday-design
 description: Use when the user wants to organize the activities (lunch, breaks, admin blocks, calls) that happen WITHIN each shift — describing how time inside shifts should be arranged, setting breaks/lunch/coverage rules, building or saving an intraday configuration, or optimizing activities with the intraday solver. Designs, saves, runs, and applies intraday scheduling.
 ---
 

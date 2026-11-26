@@ -1,4 +1,5 @@
 ---
+name: schedule-overview
 description: Use when the user asks what the schedule looks like, who is working, how many people or hours are scheduled, where the coverage gaps are, or any read-only schedule/capacity question — and as the grounding step before making changes. Reads and summarizes the schedule, coverage, and team capacity.
 ---
 

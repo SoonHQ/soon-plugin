@@ -1,0 +1,12 @@
+{
+  "name": "soon",
+  "version": "1.0.0",
+  "description": "Plan and run your Soon work schedule from Gemini: read rosters, find coverage gaps, run Auto-fill, create and publish shifts, and handle leave. Connects to Soon over OAuth with your own team and board permissions.",
+  "contextFileName": "plugins/gemini/GEMINI.md",
+  "mcpServers": {
+    "soon": {
+      "url": "https://mcp.soon.works/mcp",
+      "type": "http"
+    }
+  }
+}

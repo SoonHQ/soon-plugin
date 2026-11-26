@@ -1,0 +1,26 @@
+{
+  "name": "soon",
+  "displayName": "Soon",
+  "description": "Plan and run your Soon work schedule: read rosters, find coverage gaps, run Auto-fill, create and publish shifts, and handle leave. Connects to Soon over OAuth with your own team and board permissions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Soon",
+    "url": "https://soon.works"
+  },
+  "homepage": "https://soon.works",
+  "repository": "https://github.com/SoonHQ/soon-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "scheduling",
+    "workforce",
+    "shifts",
+    "rostering",
+    "soon"
+  ],
+  "suggestedPrompts": [
+    "Who is working on my boards this week?",
+    "Auto-fill next week's open shifts on Customer Support",
+    "Where are we understaffed tomorrow?"
+  ],
+  "skills": "plugins/soon/skills"
+}

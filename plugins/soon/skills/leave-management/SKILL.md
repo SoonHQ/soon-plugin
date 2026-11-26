@@ -1,4 +1,5 @@
 ---
+name: leave-management
 description: Use when the user asks about leave, time off, PTO, holidays, who's off, or wants to create, approve, reject, or cancel leave requests — including deciding which pending requests are safe to approve given coverage. Lists, creates, and responds to leave requests.
 ---
 
