@@ -20,6 +20,20 @@ signed-in user, with that user's own team and board permissions.
 - **Leave:** `get_leaves` to read; `request_leave` and
   `respond_leave_request` to write. Check coverage before approving.
 
+## Making a schedule
+
+When the user asks to create, build, make or fill a schedule, roster or rota,
+use Soon's solvers, not shift-by-shift creates and assigns:
+
+- who works which shifts over a period, or new shifts from opening hours:
+  Auto-fill (below);
+- activities inside shifts (breaks, tasks, hour targets per activity,
+  spreading out peaks): the intraday solver (below);
+- a whole new schedule: Auto-fill first, then the intraday solver on its
+  shifts.
+
+Build shifts by hand only when the user gives exact shifts.
+
 ## Auto-fill (whole-period planning)
 
 1. Agree the boards and the date range (inclusive, YYYY-MM-DD).
@@ -39,7 +53,10 @@ signed-in user, with that user's own team and board permissions.
 
 ## Breaks, lunch and tasks inside shifts
 
-Draft an intraday config from the user's rules, check it with
+Read the day with `get_intraday_day` and `list_coverage_requirements`. Draft
+an intraday config from the user's rules (hour targets per activity are
+`total_minutes_required`, peak limits are `concurrency` or
+`staffingRequirement`), check it with
 `validate_intraday_config` until it is valid, then `save_intraday_config` and
 `run_intraday_solver`. Write the result with `update_intraday_activities` only
 when the user accepts it.

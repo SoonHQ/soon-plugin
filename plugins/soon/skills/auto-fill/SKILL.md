@@ -1,6 +1,6 @@
 ---
 name: auto-fill
-description: Use when the user wants Soon to plan or fill a whole period of the schedule automatically, staff open shifts with the optimizing solver, generate shifts from opening hours, or apply an Auto-fill plan. Runs Auto-fill, shows the plan, and applies it only after the user agrees.
+description: Use when the user asks to create, build, make or fill a schedule, roster or rota, or wants Soon to plan or fill a whole period of the schedule automatically, staff open shifts with the optimizing solver, generate shifts from opening hours, or apply an Auto-fill plan. Runs Auto-fill, shows the plan, and applies it only after the user agrees.
 ---
 
 # Auto-fill
